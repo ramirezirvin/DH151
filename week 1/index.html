@@ -7,18 +7,44 @@
 	<!-- style sheets -->
 	<link rel="stylesheet" href="css/style.css">
 
+
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
 </head>
 <body>
 
 	<div class="header">
-		Hello World
+		<H1> <center> Chilangolandia</center>></H1>
 	</div>
 	<div class="sidebar">
-		My Sidebar
+		<form action="https://www.visitmexico.com/en/">
+            <input type="submit" value="Travel To Mexico"  />
+        </form>
 	</div>
 	<div class="content">
-		My Map
+		<div id="map"></div>
 	</div>
+
+
+
+
+
+    <script>
+    var map = L.map('map').setView([19.432608,-99.133209], 10);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var marker = L.marker([19.432608,-99.133209]).addTo(map)
+            .bindPopup('Mexico City, Mexico <br> My favorite city')
+            .openPopup();
+            
+    
+    </script>
 
 </body>
 </html>
