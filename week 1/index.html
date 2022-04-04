@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello World</title>
+	<title>Irvin Ramirez</title>
 	<meta charset="utf-8" />
 
 	<!-- style sheets -->
@@ -17,15 +17,39 @@
 <body>
 
 	<div class="header">
-		<H1> <center> Chilangolandia</center>></H1>
+		<H1> <center> About Me</center>></H1>
 	</div>
 	<div class="sidebar">
-		<form action="https://www.visitmexico.com/en/">
-            <input type="submit" value="Travel To Mexico"  />
-        </form>
+
+       <b> Irvin Ramirez</b> <br>
+
+
+
 	</div>
 	<div class="content">
+    <p>Hi my name is Irvin Ramirez I am originally from <i>Houston, Texas</i> but partially grew up in <i>Mexico City, Mexico</i>. I am a Sociology Major and in my last quarter at this institution. After graduation I plant to move to Mexico City and work for a tech startup for two years before I plan on going to graduate school. During my free time I enjoy playing videogames, reading, playing paino and learning languages, I currently am working on my fourth language, and hope to learn 6 one day. </p> 
+    <br><br>
+    I currently speak
+    <ul>
+        <li>English (fluently) </li>
+        <li>Spanish (fluently) </li>
+        <li>Portuguese (proficiently) </li>
+        <li>Korean (advanced beginner) </li>
+        <li>Norwegian (next in line) </li>
+    </ul>
+    What I expect to gain from this course <br>
+            <ul>
+                <li>Refresh my meomory on how to code with</li>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+
+
+
 		<div id="map"></div>
+        
 	</div>
 
 
@@ -33,17 +57,21 @@
 
 
     <script>
-    var map = L.map('map').setView([19.432608,-99.133209], 10);
+        var map = L.map('map').setView([34.0709, -118.444], 4);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
 
-    var marker = L.marker([19.432608,-99.133209]).addTo(map)
-            .bindPopup('Mexico City, Mexico <br> My favorite city')
-            .openPopup();
-            
-    
+        var marker = L.marker([34.0709, -118.444]).addTo(map)
+                .bindPopup('City whehere I reside')	
+
+        var marker2 = L.marker([29.749907, -95.358421]).addTo(map)
+                .bindPopup('City where I was born')
+
+        var marker3 = L.marker([19.432608, -99.133209]).addTo(map)
+                .bindPopup('My favorite city, where I would spend all my school breaks until age 15.')
+
     </script>
 
 </body>
