@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello World</title>
+	<title>Irvin's World</title>
 	<meta charset="utf-8" />
 
 	<!-- style sheets -->
@@ -15,7 +15,7 @@
 <body>
 
 	<div class="header">
-		My World
+		Irvin's World
 	</div>
 	<div class="sidebar">
 		My Sidebar
@@ -25,6 +25,7 @@
 	</div>
 
 	<script>
+        alert('Bagaboo')
 		var map = L.map('map').setView([34.0697,-118.4432], 17);
 
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -34,6 +35,11 @@
 		var marker = L.marker([34.0697,-118.4432]).addTo(map)
 				.bindPopup('The Technology Sandbox<br> Where Yoh is sitting this very moment')
 				.openPopup();	
+
+
+
+
+    
 
 	</script>
 
