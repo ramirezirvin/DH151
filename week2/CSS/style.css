@@ -22,14 +22,16 @@ body {
 .header {
 	grid-area: header;
 	padding:10px;
-    background-color: rgb(249, 255, 199);
+    background-color: rgb(66, 104, 124);
+	color: white;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     
 }
 .sidebar {
 	grid-area: sidebar;
 	padding:10px;
-    background-color: rgb(143, 180, 253);
+    background-color: rgb(132, 165, 184);
+	color: white;
 }
 .content {
 	grid-area: content;
