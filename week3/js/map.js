@@ -36,7 +36,7 @@ let data = [
         'title': 'Tokyo, Japan',
         'lat': 35.68284,
         'lon': 139.75945,
-        'desc': 'Reason for wanitng to visit:</b>I am just a big anime fan ever since I was a child, and would love to visit akihabara, I feel like my inner child otaku would very much enjoy it. Also I am a big fan of sushi and would want to try in the country of origin.',
+        'desc': '<b>Reason for wanitng to visit:</b>I am just a big anime fan ever since I was a child, and would love to visit akihabara, I feel like my inner child otaku would very much enjoy it. Also I am a big fan of sushi and would want to try in the country of origin.',
         'img': '<img src= img/japan.jpg width="200px">'
     },
 
