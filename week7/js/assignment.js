@@ -5,7 +5,7 @@ let lon = -118.3206;
 let zl = 11.4;
 let path = '';
 
-let geojsonPath = 'data/Below_Poverty.geojson';
+let geojsonPath = 'data/Neighborhoods_Considered_Safe_for_Walking_(2011_&_2015).geojson';
 let geojson_data;
 let geojson_layer;
 
@@ -43,7 +43,7 @@ function getGeoJSON(){
 		geojson_data = data;
 
 		// call the map function
-		mapGeoJSON('below_200fpl') // add a field to be used
+		mapGeoJSON('Percent1') // add a field to be used
 	})
 }
 
@@ -176,7 +176,7 @@ function mapGeoJSON(field){
         info_panel.update = function (properties) {
             // if feature is highlighted
             if(properties){
-                this._div.innerHTML = `<b>${properties.NAME}</b><br>Area Below Poverty: ${properties[fieldtomap]}`;
+                this._div.innerHTML = `<b>${properties.NAME}</b><br>Safe Neighborhoods Percentage: ${properties[fieldtomap]}`;
             }
             // if feature is not highlighted
             else
