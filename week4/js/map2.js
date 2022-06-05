@@ -6,7 +6,7 @@ let zl = 3;
 
 
 // path to csv data
-let path = "data/Airports-Only.csv";
+let path = "data/BuceesLocations.csv";
 
 // global variables
 let markers = L.featureGroup();
