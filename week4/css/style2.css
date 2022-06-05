@@ -10,27 +10,28 @@ body,html {
 
 body {
 	display: grid;
-	grid-template-rows: 80px 1fr 50px;
-	grid-template-columns: 20% 80%;
+	grid-template-rows: 80px 1fr;
+	grid-template-columns: 30% 70%;
 	grid-template-areas: 
 	"header header"
 	"sidebar content"
 	"footer footer";
+	font-family: Tahoma, sans-serif;font-size: 17px;
 }
 
 .header {
 	grid-area: header;
 	padding:10px;
-	background-color: #333;
-	color: white;
-	font-size: 2em;
+	background-color: #D3063F;
+	color: rgb(255, 255, 255);
+	font-size: 2.3em;
 }
 
 .sidebar {
-	color: white;
+	color: rgb(255, 255, 255);
 	grid-area: sidebar;
 	padding:10px;
-	background-color: #555;
+	background-color:  #D3063F;
 	overflow: auto;
 }
 
@@ -42,4 +43,15 @@ body {
 	grid-area: footer;
 	padding:10px;
 	background-color: rgb(175, 175, 175);
+	font-size: 15px;
+}
+
+.sidebar-item{
+	padding: 10px;
+	background: #FEF301;
+	color: #D3063F;
+	margin: 5px;
+	cursor: pointer;
+	width:fit-content;
+	float: left;
 }

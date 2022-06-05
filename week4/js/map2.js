@@ -17,6 +17,13 @@ $( document ).ready(function() {
     readCSV(path);
 });
 
+
+function flyToIndex(lat,lon){
+	map.flyTo([lat,lon],8)
+    console.log("clicked!")
+};
+
+
 // create the map
 function createMap(lat,lon,zl){
 	map = L.map('map').setView([lat,lon], zl);
@@ -48,10 +55,10 @@ function mapCSV(data){
 	
 	// circle options
 	let circleOptions = {
-		radius: 5,
+		radius: 10,
 		weight: 1,
-		color: 'white',
-		fillColor: 'dodgerblue',
+		color: '#FEF301',
+		fillColor: '#D3063F',
 		fillOpacity: 1
 	}
 
@@ -60,13 +67,12 @@ function mapCSV(data){
 		// create marker
 		let marker = L.circleMarker([item.latitude,item.longitude],circleOptions)
         .on('mouseover',function(){
-			this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
+			this.bindPopup(`<h3><b>${item.city, item.state}</b></h3> Address: ${item.address}`).openPopup()
 		})
 
 		// add marker to featuregroup		
 		markers.addLayer(marker)
-        // add entry to sidebar
-		$('.sidebar').append(`<img src="${item.thumbnail_url}" onmouseover="panToImage(${index})">`)
+
 	})
 
 

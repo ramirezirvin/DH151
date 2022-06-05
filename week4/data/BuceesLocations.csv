@@ -1,4 +1,4 @@
-city,state,lat,lon,address
+city,state,latitude,longitude,address
 Leeds,Alabama,33.54341,-86.58759,"6900 Buc-ee’s Blvd. Leeds, Alabama 35094"
 Loxley,Alabama,30.63452,-87.676437,"20403 County Rd. 68 Robertsdale, Alabama 36567"
 Daytona Beach,Florida,29.2236,-81.10091,"2330 Gateway North Drive Daytona Beach, FL 32117"
